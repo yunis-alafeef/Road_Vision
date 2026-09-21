@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Road Vision - اكتشاف أضرار الطرق</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <main class="container">
+        <header>
+            <h1>نظام Road Vision</h1>
+            <p>الذكاء الاصطناعي لاكتشاف أضرار وتشققات الطرق بدقة واحترافية</p>
+        </header>
+
+        <section class="upload-section">
+            <div class="upload-box" id="drop-area">
+                <input type="file" id="fileElem" accept="image/*" onchange="handleFiles(this.files)">
+                <label class="button" for="fileElem">اختر صورة</label>
+                <p>أو قم بسحب وإفلات الصورة هنا</p>
+                <div id="preview-container">
+                    <img id="image-preview" src="" alt="Preview">
+                </div>
+            </div>
+            
+            <button id="detect-btn" class="detect-btn" disabled>اكتشاف الأضرار</button>
+            <div class="loader" id="loader"></div>
+        </section>
+
+        <section class="result-section" id="result-section">
+            <h2>نتيجة الفحص</h2>
+            <div class="result-content">
+                <img id="result-image" src="" alt="Result Image">
+                <div id="detection-details" class="details-box"></div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="credits">
+                <p>تم العمل بواسطة المهندسين:</p>
+                <div class="names">
+                    <span>يونس العفيف</span>
+                    <span>يعقوب الحكيم</span>
+                    <span>محمد السنباني</span>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

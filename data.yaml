@@ -1,0 +1,10 @@
+names:
+  0: D00_Longitudinal_Crack
+  1: D10_Transverse_Crack
+  2: D20_Alligator_Crack
+  3: D40_Pothole
+nc: 4
+path: /content/road_damage/dataset
+test: images/test
+train: images/train
+val: images/val
